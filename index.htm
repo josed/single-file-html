@@ -1,6 +1,6 @@
 <! --
 
-
+https://github.com/josed/single-file-html
 
 -- >
 
@@ -104,10 +104,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
 #page {
 width: 960px;
 margin: auto;
-border-style: solid;
-border-color: black;
-border-width: 1px;
+
 padding: 2em;
+-moz-border-radius: 9px;
+border-radius: 9px;
+
+-moz-box-shadow: 0px 0px 5px #888;
+-webkit-box-shadow: 0px 0px 5px #888;
+box-shadow: 0px 0px 10px #000000;
 }
 
 
@@ -123,6 +127,8 @@ color: #FFFFFF;
 text-shadow: 0 0 0.1em #FFFFFF;
 
 
+
+
 }
 
 h2 {
@@ -134,6 +140,8 @@ p {
 font-size: 16pt;
 padding: 10px;
 line-height: 200%;
+text-shadow: 0px 1px 3px #666;
+text-align: center;
 }
 
 .buttons {
@@ -161,11 +169,13 @@ box-shadow: 0px 0px 5px #888;
 
 #buttons {
 width: 500px;
+
 /*
 border-style: solid;
 border-color: black;
 border-width: 1px;
 */
+
 margin-left: auto;
 margin-right: auto;
 padding: 1em;
@@ -176,7 +186,21 @@ text-align: center;
 #footer {
 text-align: center;
 color: white;
+padding: 1em;
 }
+
+
+/* Responsiveness */
+
+@media (max-width: 959px) {
+
+	#page {
+	width: 100%;
+	}
+
+
+}
+
 
 </style>
 
@@ -222,7 +246,7 @@ color: white;
 
 
 <div id="footer">
-Footer notice
+Copyright &copy; 2012 Someone.
 </div>
 
 
